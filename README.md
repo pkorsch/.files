@@ -3,10 +3,17 @@ config files - .bashrc, .vimrc
 
 ## .vimrc - extra steps:
 
+## Color Schema
+
 cd ~/.vim/colors
+
 curl -o molokai.vim https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
 
-Add these two lines in between the two call plug#... lines:
+
+
+## Plugins
+
+## Add these two lines in between the two call plug#... lines:
 
 " PLUGINS ---------------------------------------------------------------- {{{
 
