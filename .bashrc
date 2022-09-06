@@ -14,6 +14,9 @@ shopt -s histappend
 HISTSIZE=1000
 HISTFILESIZE=2000
 
+# for custom prompt
+export PS1='\[\e[0m\][ \[\e[0;2;3m\]\t \[\e[0;1;38;5;164m\]\u\[\e[0;97m\]@\[\e[0;1;97m\]\h\[\e[0m\]:\[\e[0m\]\W \[\e[0;1;2;3m\]$(git branch 2>/dev/null | grep '"'"'^*'"'"') \[\e[0m\]]\[\e[0m\]\$ \[\e[0m\]'
+
 # for sourcing bash aliases from file
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
